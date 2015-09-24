@@ -29,7 +29,6 @@ class Redis
   def initialize(options = {})
     @options = options.dup
     @original_client = @client = Client.new(options)
-
     super() # Monitor#initialize
   end
 
